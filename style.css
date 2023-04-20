@@ -108,6 +108,59 @@ a:hover {
 
 
 
+#ourstory {    
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#storytext{   
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+#storytext p{
+    width: 300px;
+}
+
+#learnMore{
+    align-self: flex-start;
+    color: aqua;
+    border: 2px solid aqua;
+    border-color: aqua;
+    background-color: transparent;
+    padding: 0px 15px;
+    text-decoration: none;
+
+    
+}
+#storylogo{     
+    display: flex;
+    justify-content: flex-end;
+}
+
+#storylogo img{
+    margin: 10%;
+    margin-right: 0;   
+    width: 235;
+    height: 229;
+}
+
+#watchstory{
+    background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png");
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#watchstory h3{
+    color: white;
+}
+
+
 
 /*  lisa 4th - Expertise    */
 #expertise {
