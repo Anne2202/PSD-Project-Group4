@@ -316,7 +316,7 @@ a:hover {
    
  }
  
- 
+
  .footer-grid {
    display: grid;
    width: 100%;
@@ -337,9 +337,11 @@ a:hover {
  }
  
  .footer-logo {
+    display: flex;
+    flex-direction: row;
    margin-top: 15%;
    height: 20px;
-   display: inline-flex;
+
    justify-content: left;
  }
  
@@ -347,6 +349,16 @@ a:hover {
    height: 150%;
  }
  
+
+ .bottom-tajam {
+    color: rgb(75, 133, 133);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3%;
+    font-size: 1.2em;
+    align-items: first baseline;
+}
+
+
  h7 {
    font-weight: bold;
    letter-spacing: -0.5px;
