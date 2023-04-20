@@ -1,0 +1,23 @@
+#ourstory {    
+    display: flex; 
+    justify-content: center;
+}
+
+#storytext{   
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+#storylogo{     
+    display: flex;
+    justify-content: flex-end;
+}
+
+#storylogo img{
+    margin: 10%;
+    margin-right: 0;   
+    width: 235;
+    height: 229;
+}
