@@ -1,13 +1,28 @@
 #ourstory {    
     display: flex; 
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 #storytext{   
-    width: 50%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    
+}
+#storytext p{
+    width: 300px;
+}
+
+#learnMore{
+    align-self: flex-start;
+    color: aqua;
+    border: 2px solid aqua;
+    border-color: aqua;
+    background-color: transparent;
+    padding: 0px 15px;
+    text-decoration: none;
+
     
 }
 #storylogo{     
@@ -20,4 +35,17 @@
     margin-right: 0;   
     width: 235;
     height: 229;
+}
+
+#watchstory{
+    background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png");
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#watchstory h3{
+    color: white;
 }
