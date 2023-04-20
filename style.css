@@ -91,15 +91,18 @@ a:hover {
 .learnMoreButton {
     color: aqua;
     border: solid aqua 1px;
-    display: inline-block;
     padding: 10px;
-    margin: auto;
     text-align: center;
     background-color: rgba(0, 255, 255, 0);
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.8em;
     text-transform: uppercase;
+}
+
+#learnMoreButton1{
+    display: inline-block;
+    margin: auto;
 }
 
 #hero-section {
@@ -124,17 +127,10 @@ a:hover {
     width: 300px;
 }
 
-#learnMore{
-    align-self: flex-start;
-    color: aqua;
-    border: 2px solid aqua;
-    border-color: aqua;
-    background-color: transparent;
-    padding: 0px 15px;
-    text-decoration: none;
-
-    
+#learnMoreButton2{
+    align-self: flex-start;       
 }
+
 #storylogo{     
     display: flex;
     justify-content: flex-end;
