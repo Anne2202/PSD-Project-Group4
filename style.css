@@ -1,160 +1,193 @@
 header {
-    background-size: 100%;
+  background-size: 100%;
 }
 
 nav {
-    border: 2px solid rgba(0, 128, 0, 0);
-    display: flex;
-    justify-content: space-between;
+  border: 2px solid rgba(0, 128, 0, 0);
+  display: flex;
+  justify-content: space-between;
 }
 
 .logoAndTajam {
-    border: 2px solid rgba(0, 0, 255, 0);
-    padding: 1em;
-    padding-left: 8em;
-    width: 40%;
-    display: flex;
-    justify-content:center;
-    gap: 1em;
+  border: 2px solid rgba(0, 0, 255, 0);
+  padding: 1em;
+  padding-left: 8em;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 .top-tajam {
-    color: aqua;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
-    font-weight: 100;
+  color: aqua;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: 100;
 }
 
 ul {
-    border: 2px solid rgba(255, 0, 0, 0);
-    width: 60%;
-    padding-left: 6em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    list-style-type: none;
+  border: 2px solid rgba(255, 0, 0, 0);
+  width: 60%;
+  padding-left: 6em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  list-style-type: none;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: aqua;
+  color: aqua;
 }
 
 #hero-section {
-    border: 2px solid rgba(255, 255, 255, 0);
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-    
+  border: 2px solid rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+
 }
 
 #hero-section h1 {
-    border: 2px solid rgba(238, 130, 238, 0);
-    color: white;
-    padding: 0.6em;
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
+  border: 2px solid rgba(238, 130, 238, 0);
+  color: white;
+  padding: 0.6em;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
 }
 
 #hero-section hr {
-    width: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    size: 1px;
-    }
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  size: 1px;
+}
 
 #hero-section p {
-    color: white;
-    padding-left: 22em;
-    padding-right: 22em;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.8em;
-    word-spacing: 0.3em;
-    line-height: 1.6em;
+  color: white;
+  padding-left: 22em;
+  padding-right: 22em;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+  word-spacing: 0.3em;
+  line-height: 1.6em;
 }
 
 .learnMoreButton {
-    color: aqua;
-    border: solid aqua 1px;
-    padding: 10px;
-    text-align: center;
-    background-color: rgba(0, 255, 255, 0);
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.8em;
-    text-transform: uppercase;
+  color: aqua;
+  border: solid aqua 1px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0);
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
 
-#learnMoreButton1{
-    display: inline-block;
-    margin: auto;
+#learnMoreButton1 {
+  display: inline-block;
+  margin: auto;
 }
 
 #hero-section {
-    padding-bottom: 9em;
+  padding-bottom: 9em;
 }
 
+/* ============================================================================================================================== */
 /*============================SECTION OURSTORY==========================================================================*/
-#ourstory {    
-    display: flex; 
-    justify-content: center;
-    padding: 5em;
+
+#ourstory {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
 }
 
-#storytext{  
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    
-}
-#storytext p{
-    width: 80%
-    
+#storytext {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-#learnMoreButton2{
-    align-self: flex-start;       
+#storytext p {
+  width: 80%
 }
 
-#storylogo{     
-    width: calc(100%/12*5);
-    display: flex;
-    justify-content: flex-end;
+#learnMoreButton2 {
+  align-self: flex-start;
 }
 
-#storylogo img{
-    margin: auto 0;    
-    padding-right: 2em;    
+#learnMoreButton2:hover{
+  color: white;
+  background-color: aqua;
+  transition: 1s;
 }
 
-/*============================SECTTION WATCHSTORY================================================================================*/
-#watchstory{
-    background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png");
-    height: 550px;
+#storylogo {
+  width: calc(100%/12*5);
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+#storylogo img {
+  padding-right: 2em;
+} */
+
+@media only screen and (max-width: 800px) {
+  #ourstory{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #storytext {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #learnMoreButton2 {
+    align-self: center;
+  }
 }
 
-#watchstory h3{
-    color: white;
+
+
+/* ============================================================================================================================== */
+/*============================SECTTION WATCHSTORY================================================================================*/
+
+#watchstory {
+  background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png");
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#watchstory h3 {
+  color: white;
 }
 
 
@@ -203,7 +236,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .grid-1,
@@ -259,7 +292,7 @@ h6 {
   border-bottom: 5px solid white;
   width: 100vw;
   font-size: 100%;
-  
+
 }
 
 .team-box {
@@ -272,7 +305,7 @@ h6 {
   color: white;
 }
 
-.team-box > h1 {
+.team-box>h1 {
   margin-top: 10%;
   margin-bottom: 0%;
 }
@@ -306,11 +339,11 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1.5%; 
-  
+  margin-top: 1.5%;
+
 }
 
-.bottom-items-section > p {
+.bottom-items-section>p {
   margin-bottom: 0%;
 }
 
@@ -322,7 +355,7 @@ h6 {
   background-color: transparent;
   color: aqua;
   margin-bottom: 20%;
-  
+
 }
 
 
@@ -348,43 +381,47 @@ h6 {
 }
 
 /*=======================================SECTION CONTACT================================================================================*/
-#contact{
+#contact {
   border: solid rgba(0, 255, 255, 0);
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
-.contactItem{
+.contactItem {
   border: solid rgba(0, 255, 4, 0);
   width: 30%;
   padding: 3%;
 }
 
-.contactItem h2{
+.contactItem h2 {
   text-transform: uppercase;
 }
-.inputItem{
+
+.inputItem {
   margin: 0.5em 0;
   padding: 0.5em;
   width: 95%;
 }
-.clientContainer{
+
+.clientContainer {
   border: solid rgba(5, 8, 5, 0);
   display: flex;
   justify-content: space-between;
-  
-  
+
+
 }
-.clients{
+
+.clients {
   border: solid rgba(207, 126, 26, 0);
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 40%;
   align-content: center;
-  
+
 }
-.clients img{
+
+.clients img {
   width: 85%;
   margin: 5% 0;
 }
@@ -392,10 +429,10 @@ h6 {
 /*  Lisa footer section   */
 
 #footer-section {
-width: 100vw;
-height: 380px;
-border-bottom-right-radius: 12%;
-border-bottom-left-radius: 12%;
+  width: 100vw;
+  height: 380px;
+  border-bottom-right-radius: 12%;
+  border-bottom-left-radius: 12%;
 }
 
 
@@ -404,7 +441,7 @@ footer {
   background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover no-repeat;
   height: 300px;
   width: 100%;
-  
+
 }
 
 
@@ -539,7 +576,7 @@ h7 {
 #btn-send-email {
 
   width: 4em;
-  height:90%;
+  height: 90%;
   padding: 0 20%;
   border: 2px solid rgb(141, 152, 162);
   background-color: rgb(141, 152, 162);
@@ -560,7 +597,7 @@ h7 {
 
 .footer-input {
   display: inline-flex;
-  margin: 0%; 
+  margin: 0%;
 }
 
 
@@ -572,6 +609,7 @@ h7 {
 /* -------- Lisa responsive ---------------*/
 
 @media only screen and (max-width: 800px) {
+
   /*expertise part*/
   #expertise {
     height: 90%;
@@ -600,50 +638,50 @@ h7 {
     font-size: 50%;
   }
 
-.expertise-p-none {
-  display: none;
-}
+  .expertise-p-none {
+    display: none;
+  }
 
 
-/*team part*/
-.team-box-firstP {
-  display: none;
-}
+  /*team part*/
+  .team-box-firstP {
+    display: none;
+  }
 
-.bottom-items-section {
-  display: none;
-}
+  .bottom-items-section {
+    display: none;
+  }
 
-.btn-weAre {
-  display: none;
-}
+  .btn-weAre {
+    display: none;
+  }
 
 
-.card{
-  background-size: cover;
-  border-bottom: 10%;
-  display: flex;
-  border: 2px solid rgb(127, 243, 179);
-}
+  .card {
+    background-size: cover;
+    border-bottom: 10%;
+    display: flex;
+    border: 2px solid rgb(127, 243, 179);
+  }
 
-.items {
-  display: flex;
-  flex-wrap: wrap;
+  .items {
+    display: flex;
+    flex-wrap: wrap;
 
-}
+  }
 
-/*footer part*/
-#footer-section {
-  height: 670px;
-}
+  /*footer part*/
+  #footer-section {
+    height: 670px;
+  }
 
-.footer-grid {
-display: flex;
-flex-wrap: wrap;
-}
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.footer-box-none {
-  display: none;
-}
- 
+  .footer-box-none {
+    display: none;
+  }
+
 }
