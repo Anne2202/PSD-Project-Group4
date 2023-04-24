@@ -782,45 +782,7 @@ h7 {
     display: flex;
     flex-wrap: wrap;
   }
-
-/*  Lisa media footer section   */
-
-#footer-section {
-  width: 100vw;
 }
-
-footer {
-  background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover
-    no-repeat;
-  width: 100%;
-}
-
-/*footer media part*/
-#footer-section {
-  height: 670px;
-}
-
-.footer-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer-box-none {
-  display: none;
-}
-
-.team-box {
-  margin-top: 0px;
-  overflow: hidden;
-}
-}
-
-/* -------- Lisa responsive end - neu---------------*/
-
-
-
 
 /*Anne - contact us*/
 
@@ -895,3 +857,45 @@ font-weight: 700;
 }
 
 */
+
+/*  Lisa footer section   */
+
+#footer-section {
+  width: 100vw;
+  height: 380px;
+  border-bottom-right-radius: 12%;
+  border-bottom-left-radius: 12%;
+}
+
+footer {
+  background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover
+    no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+/*footer part*/
+#footer-section {
+  height: 670px;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-box-none {
+  display: none;
+}
+
+.team-box {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+/* -------- Lisa responsive end - neu---------------*/
+
+.footer-box-none {
+  display: none;
+}
