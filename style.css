@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 header {
     background-size: 100%;
 }
@@ -613,7 +617,8 @@ a:hover {
  #footer-section {
    height: 670px;
  }
- 
+
+
  .footer-grid {
   display: flex;
   flex-wrap: wrap;
