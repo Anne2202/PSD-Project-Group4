@@ -2,9 +2,11 @@
   margin: 0;
 } */
 
-
 header {
-  background-size: 100%;
+  border: 2px solid rgba(255, 192, 203, 0);
+  background-image: url(./photoshop/photoshop/design-assets/bgk-header.png);
+  background-repeat: no-repeat;
+  height: 46em;
 }
 
 nav {
@@ -17,9 +19,9 @@ nav {
   border: 2px solid rgba(0, 0, 255, 0);
   padding: 1em;
   padding-left: 8em;
-  width: 40%;
+  width: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1em;
 }
 
@@ -32,7 +34,7 @@ nav {
 
 ul {
   border: 2px solid rgba(255, 0, 0, 0);
-  width: 60%;
+  width: 70%;
   padding-left: 6em;
   display: flex;
   flex-wrap: wrap;
@@ -59,10 +61,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin-top: 3em;
+  padding-bottom: 9em;
+  align-content: center;
 }
 
 #hero-section h1 {
-  border: 2px solid rgba(238, 130, 238, 0);
+  border: 2px solid rgba(238, 130, 238, 0.603);
   color: white;
   padding: 0.6em;
   display: flex;
@@ -78,13 +82,14 @@ a:hover {
 }
 
 #hero-section p {
+  border: 2px solid white;
   color: white;
   padding-left: 22em;
   padding-right: 22em;
   padding-top: 2em;
   padding-bottom: 3em;
   display: flex;
-  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.8em;
@@ -102,15 +107,95 @@ a:hover {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.8em;
   text-transform: uppercase;
-}
-
-#learnMoreButton1 {
   display: inline-block;
   margin: auto;
 }
 
-#hero-section {
-  padding-bottom: 9em;
+@media screen and (max-width: 1000px) {
+  nav {
+    border: 2px solid rgba(0, 128, 0, 0);
+    display: flex;
+    justify-content: space-between;
+  }
+  #hero-section p {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+  #hero-section {
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  ul {
+    padding-left: 1em;
+    padding-right: 2em;
+  }
+  #hero-section {
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logoAndTajam {
+    border: 2px solid rgba(0, 0, 255, 0);
+    padding: 1em;
+    padding-left: 5em;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+  #hero-section {
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+  }
+  #hero-section h1 {
+    border: 2px solid rgba(238, 130, 238, 0.603);
+    color: white;
+    padding: 1em;
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  #hero-section p {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    border: 2px solid rgba(0, 128, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoAndTajam {
+    border: 2px solid rgba(0, 0, 255, 0);
+    padding: 1em;
+  }
+  ul {
+    margin: 0;
+    font-size: 0.7em;
+    padding: 1em;
+    justify-content: center;
+  }
+
+  #hero-section {
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero-section p {
+    padding: 1em;
+  }
 }
 
 /* ============================================================================================================================== */
@@ -156,7 +241,6 @@ a:hover {
   justify-content: flex-end;
 }
 
-
 #storylogo img {
   display: block;
   height: 85%;
@@ -189,7 +273,7 @@ a:hover {
 /*============================SECTTION WATCHSTORY================================================================================*/
 
 #watchstory {
-  background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png") ;
+  background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png");
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -200,9 +284,6 @@ a:hover {
 #watchstory h3 {
   color: white;
 }
-
-
-
 
 /*  lisa 4th - Expertise    */
 #expertise {
@@ -495,14 +576,13 @@ h6 {
   
 }
 
+/*  Lisa footer section-neu   */
 
-
- /*  Lisa footer section-neu   */
- 
- #footer-section {
+#footer-section {
   width: 100vw;
   height: 380px;
- }
+
+}
 
 footer {
   background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover
@@ -658,82 +738,73 @@ h7 {
   margin: 0%;
 }
 
+/* -------- Lisa responsive -neu  ---------------*/
 
-  
-   
-   /* -------- Lisa responsive -neu  ---------------*/
-   
-   @media only screen and (max-width: 800px) {
-     /*expertise part*/
-     #expertise {
-       height: 80%;
-       background-color: white;
-       margin: 25px 5px;
-       border: 30px 30px; 
-       margin-bottom: 60px;
-       align-content: center;
-       font-size: large;
-       overflow: hidden;
-     }
-   
-     .expertice-heading {
-       font-weight: bolder;
-     }
- 
- 
-     .grid {
-       display: grid;
-       height: 90%;
-       width: 100%;
-       grid-template-columns: 33% 33% 33%;
-       grid-template-rows: 55% 55%;
-       margin: 1% 1%;
-       flex-shrink: 0;
-     }
-   
-     .grid-1 p,
-     .grid-2 p,
-     .grid-3 p,
-     .grid-4 p,
-     .grid-5 p,
-     .grid-6 p {
-       text-align-last: center;
-       font-size: 50%;
-     }
-  
+@media only screen and (max-width: 800px) {
+  /*expertise part - media*/
+  #expertise {
+    height: 80%;
+    background-color: white;
+    margin: 25px 5px;
+    border: 30px 30px;
+    margin-bottom: 60px;
+    align-content: center;
+    font-size: large;
+    overflow: hidden;
+  }
+
+  .expertice-heading {
+    font-weight: bolder;
+  }
+
+  .grid {
+    display: grid;
+    height: 90%;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 55% 55%;
+    margin: 1% 1%;
+    flex-shrink: 0;
+  }
+
+  .grid-1 p,
+  .grid-2 p,
+  .grid-3 p,
+  .grid-4 p,
+  .grid-5 p,
+  .grid-6 p {
+    text-align-last: center;
+    font-size: 50%;
+  }
+
   .expertise-p-none {
     display: none;
   }
 
- 
+  /*team part - media*/
 
-  /*team part*/
- 
   #meetteam {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
+  }
 
-  }
- 
   .team-box-h1 {
-   text-align: center;
-   padding: 5%;
-   font-weight: 100;
- 
+    text-align: center;
+    padding: 5%;
+    font-weight: 100;
   }
- 
+
   .team-box-firstP {
     display: none;
   }
-  
+
   .bottom-items-section {
     display: none;
   }
-  
+
   .btn-weAre {
     display: none;
   }
-
 
   .card {
     background-size: cover;
@@ -741,34 +812,39 @@ align-items: center;
     display: flex;
     border: 2px solid rgb(127, 243, 179);
   }
-  
+
   .items {
     display: flex;
     flex-wrap: wrap;
   }
-  
 
-  /*footer part*/
-  #footer-section {
-    height: 670px;
-  }
-  
-  .footer-grid {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-  }
-  
-  .footer-box-none {
-    display: none;
-  }
-  
- .team-box {
-   margin-top: 0px;
-   overflow: hidden;
- }
- 
-   }
-   /* -------- Lisa responsive end - neu---------------*/
- 
- 
+
+
+/*footer part - media */
+#footer-section {
+  height: 670px;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-box-none {
+  display: none;
+}
+
+.team-box {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.footer-box-none {
+  display: none;
+}
+
+}
+
+
+/* -------- Lisa responsive end - neu---------------*/
