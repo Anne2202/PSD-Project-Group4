@@ -487,8 +487,7 @@ h6 {
 #footer-section {
   width: 100vw;
   height: 380px;
-  border-bottom-right-radius: 12%;
-  border-bottom-left-radius: 12%;
+
 }
 
 
@@ -1024,7 +1023,6 @@ h7 {
  #footer-section {
    height: 670px;
  }
-
 
  .footer-grid {
   display: flex;
