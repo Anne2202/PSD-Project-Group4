@@ -2,6 +2,7 @@
   margin: 0;
 }
 
+
 header {
   background-size: 100%;
 }
@@ -370,6 +371,7 @@ h6 {
   font-size: 10px;
   text-align: center;
   color: white;
+  margin: 10px;
 }
 
 .card {
@@ -1022,6 +1024,7 @@ h7 {
  /*footer part*/
  #footer-section {
    height: 670px;
+   max-width: 100%;
  }
 
  .footer-grid {
