@@ -125,8 +125,12 @@ a:hover {
 #storytext {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
+}
+
+#storytext h2{
+  margin-top: 0;
 }
 
 #storytext p {
@@ -149,13 +153,13 @@ a:hover {
   width: calc(100% / 12 * 5);
   /* height:30%; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 
 #storylogo img {
   display: block;
-  height: 75%;
+  height: 85%;
   width: auto;
 }
 
