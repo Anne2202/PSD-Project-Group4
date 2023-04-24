@@ -135,6 +135,8 @@ a:hover {
 }
 
 #learnMoreButton2 {
+  margin: 20px;
+  margin-left: 0px;
   align-self: flex-start;
 }
 
@@ -183,7 +185,7 @@ a:hover {
 /*============================SECTTION WATCHSTORY================================================================================*/
 
 #watchstory {
-  background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png");
+  background-image: url("./photoshop/photoshop/design-assets/bgk-middle.png") ;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -484,563 +486,290 @@ h6 {
 
 
 
-/*  Lisa footer section   */
-
-#footer-section {
+ /*  Lisa footer section   */
+ 
+ #footer-section {
   width: 100vw;
   height: 380px;
-
-}
-
-
-
-footer {
-  background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover no-repeat;
-  height: 300px;
-  width: 100%;
-
-}
-
-
-.footer-grid {
-  display: grid;
-  width: 100%;
-  height: auto;
-  grid-template-columns: 20% 20% 20%;
-  grid-template-rows: 30%;
-  gap: 1.5em;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: baseline;
-  font-size: 100%;
-
-  color: #ffffff;
-}
-
-.fgrid div {
-  margin: 0.5em;
-}
-
-.footer-logo {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15%;
-  height: 20px;
-
-  justify-content: left;
-}
-
-.footer-logo img {
-  height: 150%;
-}
-
-
-.bottom-tajam {
-  color: rgb(75, 133, 133);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 3%;
-  font-size: 1.2em;
-  align-items: first baseline;
-}
-
-
-h7 {
-  font-weight: bold;
-  letter-spacing: -0.5px;
-}
-
-.footer-grid p {
-  text-align: justify;
-  font-size: 90%;
-  font-weight: lighter;
-  line-height: 1.6;
-
-}
-
-.footer-grid-1 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5%;
-  grid-row: 1/ 3;
-}
-
-.para {
-  margin-top: 12%;
-  line-height: 1.8;
-}
-
-.footer-grid-2,
-.footer-grid-3 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  grid-row: 1/ 3;
-
-}
-
-.footer-icons,
-.adress-flex,
-.phone-flex {
-  display: inline-flex;
-  margin: 0.5em 0em;
-  justify-content: flex-start;
-  align-content: flex-start;
-
-}
-
-.phone-flex div,
-.adress-flex div,
-.footer-flexdiv {
-  margin-right: 1em;
-}
-
-.phone-flex img,
-.adress-flex img {
-  margin-top: 100%;
-  width: 1em;
-}
-
-.footer-icons img {
-  margin-right: 5%;
-  width: 2.5em;
-}
-
-#email {
-  background: transparent;
-  border: 1px groove #ffffff;
-  height: 80%;
-  width: 186px;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-  size: x-small;
-}
-
-.news-img-box {
-  align-items: center;
-  align-content: center;
-  opacity: 62%;
-  background-color: transparent;
-}
-
-.footer-input img {
-  size: auto;
-}
-
-#btn-send-email {
-
-  width: 4em;
-  height: 90%;
-  padding: 0 20%;
-  border: 2px solid rgb(141, 152, 162);
-  background-color: rgb(141, 152, 162);
-  color: rgb(141, 152, 162);
-
-
-}
-
-.footer-grid-4 {
-  display: inline-flex;
-  grid-column: 1/ span 2;
-  margin-bottom: 0em;
-}
-
-.footer-grid-4 div {
-  margin-right: 2%;
-}
-
-.footer-input {
-  display: inline-flex;
-  margin: 0%;
-}
-
-
-
-
-
-
-
-/* -------- Lisa responsive ---------------*/
-
-@media only screen and (max-width: 800px) {
-
-  /*expertise part*/
-  #expertise {
-    height: 90%;
-    background-color: white;
-    margin: 25px 5px;
-    align-content: center;
   }
-
-  .grid {
-    display: grid;
-    height: 90%;
+  
+  footer {
+    background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover no-repeat;
+    height: 300px;
     width: 100%;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 55% 55%;
-    margin: 1% 1%;
-    flex-shrink: 0;
-  }
-
-  .grid-1 p,
-  .grid-2 p,
-  .grid-3 p,
-  .grid-4 p,
-  .grid-5 p,
-  .grid-6 p {
-    text-align-last: center;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    opacity: 70%;
-  }
-  
-  h6 {
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+    
   }
   
  
- 
- 
-  
-  /*lisa - 5th - team section*/
-  #meetteam {
-    display: flex;
+  .footer-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 30%;
+    gap: 1.5em;
     justify-content: center;
-    background: url(photoshop/photoshop/design-assets/bgk-middle.png) center/cover no-repeat;
-    width: 100vw;
-    height: 100%;
+    align-content: flex-start;
+    align-items: baseline;
+    font-size: 100%;
+  
+    color: #ffffff;
   }
+  
+  .fgrid div {
+   margin: 0.5em;
+   margin-left: 0em;
+  }
+  
+  .footer-logo {
+     display: flex;
+     flex-direction: row;
+    margin-top: 15%;
+    height: 20px;
  
-  .team-box {
-    display: flex;
-    justify-content: center;
-    height: 90%;
+    justify-content: left;
+  }
+  
+  .footer-logo img {
+    height: 150%;
+  }
+  
+ 
+  .bottom-tajam {
+     color: rgb(75, 133, 133);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding-left: 3%;
+     font-size: 1.2em;
+     align-items: first baseline;
+ }
+ 
+ 
+  h7 {
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+  
+  .footer-grid p {
+    text-align: justify;
+    font-size: 90%;
+    font-weight: lighter;
+    line-height: 1.6;
+  
+  }
+  
+  .footer-grid-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: white;
-
+    margin-bottom: 1.5%;
+    grid-row: 1/ 3;
   }
-
+  
+  .para {
+    margin-top: 12%;
+    line-height: 1.8;
+  }
+  
+  .footer-grid-2,
+  .footer-grid-3 {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 1/ 3;
+  
+  }
+  
+  .footer-icons,
+  .adress-flex,
+  .phone-flex {
+    display: inline-flex;
+    margin: 0.5em 0em;
+    justify-content: flex-start;
+    align-content: flex-start;
+  
+  }
+  
+  .phone-flex div,
+  .adress-flex div,
+  .footer-flexdiv {
+    margin-right: 1em;
+  }
+  
+  .phone-flex img,
+  .adress-flex img {
+    margin-top: 100%;
+    width: 1em;
+  }
+  
+  .footer-icons img {
+    margin-right: 5%;
+    width: 2.5em;
+  }
+  
+  #email {
+    background: transparent;
+    border: 1px groove #ffffff;
+    height: 80%;
+    width: 186px;
+   }
+  
+  :-ms-input-placeholder {
+    color: white;
+    size: x-small;
+  }
+  
+  .news-img-box {
+    align-items: center;
+    align-content: center;
+    opacity: 62%;
+    background-color: transparent;
+  }
+  
+  .footer-input img {
+    size: auto; 
+  }
+  
+  #btn-send-email {
+  
+    width: 4em;
+    height:90%;
+    padding: 0 20%;
+    border: 2px solid rgb(141, 152, 162);
+    background-color: rgb(141, 152, 162);
+    color: rgb(141, 152, 162);
+  
+  
+  }
+  
+  .footer-grid-4 {
+    display: inline-flex;
+    grid-column: 1/ span 2;
+    margin-bottom: 0em;
+  }
+  
+  .footer-grid-4 div {
+    margin-right: 2%;
+  }
+  
+  .footer-input {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  
+  
+  
+  
+  
+   
+   /* -------- Lisa responsive ---------------*/
+   
+   @media only screen and (max-width: 800px) {
+     /*expertise part*/
+     #expertise {
+       height: 80%;
+       background-color: white;
+       margin: 25px 5px;
+       border: 30px 30px; 
+       margin-bottom: 60px;
+       align-content: center;
+       font-size: large;
+       overflow: hidden;
+     }
+   
+     .expertice-heading {
+       font-weight: bolder;
+     }
+ 
+ 
+     .grid {
+       display: grid;
+       height: 90%;
+       width: 100%;
+       grid-template-columns: 33% 33% 33%;
+       grid-template-rows: 55% 55%;
+       margin: 1% 1%;
+       flex-shrink: 0;
+     }
+   
+     .grid-1 p,
+     .grid-2 p,
+     .grid-3 p,
+     .grid-4 p,
+     .grid-5 p,
+     .grid-6 p {
+       text-align-last: center;
+       font-size: 50%;
+     }
+  
   .expertise-p-none {
     display: none;
   }
-
-
+  
+  
   /*team part*/
+ 
+  #meetteam {
+display: flex;
+align-items: center;
+
+  }
+ 
+  .team-box-h1 {
+   text-align: center;
+   padding: 5%;
+   font-weight: 100;
+ 
+  }
+ 
   .team-box-firstP {
     display: none;
   }
-
+  
   .bottom-items-section {
     display: none;
   }
-
+  
   .btn-weAre {
     display: none;
   }
-
-
-  .card {
+  
+ 
+  
+  .card{
     background-size: cover;
     border-bottom: 10%;
     display: flex;
     border: 2px solid rgb(127, 243, 179);
   }
-
+  
   .items {
     display: flex;
     flex-wrap: wrap;
-
-  }
- 
- /*  Lisa footer section   */
- 
- #footer-section {
- width: 100vw;
- height: 380px;
- }
- 
- footer {
-   background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover no-repeat;
-   height: 300px;
-   width: 100%;
    
- }
- 
-
- .footer-grid {
-   display: grid;
-   width: 100%;
-   height: auto;
-   grid-template-columns: 20% 20% 20%;
-   grid-template-rows: 30%;
-   gap: 1.5em;
-   justify-content: center;
-   align-content: flex-start;
-   align-items: baseline;
-   font-size: 100%;
- 
-   color: #ffffff;
- }
- 
- .fgrid div {
-  margin: 0.5em;
-  margin-left: 0em;
- }
- 
- .footer-logo {
-    display: flex;
-    flex-direction: row;
-   margin-top: 15%;
-   height: 20px;
-
-   justify-content: left;
- }
- 
- .footer-logo img {
-   height: 150%;
- }
- 
-
- .bottom-tajam {
-    color: rgb(75, 133, 133);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 3%;
-    font-size: 1.2em;
-    align-items: first baseline;
-}
-
-
- h7 {
-   font-weight: bold;
-   letter-spacing: -0.5px;
- }
- 
- .footer-grid p {
-   text-align: justify;
-   font-size: 90%;
-   font-weight: lighter;
-   line-height: 1.6;
- 
- }
- 
- .footer-grid-1 {
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 1.5%;
-   grid-row: 1/ 3;
- }
- 
- .para {
-   margin-top: 12%;
-   line-height: 1.8;
- }
- 
- .footer-grid-2,
- .footer-grid-3 {
-   margin-top: 2%;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   grid-row: 1/ 3;
- 
- }
- 
- .footer-icons,
- .adress-flex,
- .phone-flex {
-   display: inline-flex;
-   margin: 0.5em 0em;
-   justify-content: flex-start;
-   align-content: flex-start;
- 
- }
- 
- .phone-flex div,
- .adress-flex div,
- .footer-flexdiv {
-   margin-right: 1em;
- }
- 
- .phone-flex img,
- .adress-flex img {
-   margin-top: 100%;
-   width: 1em;
- }
- 
- .footer-icons img {
-   margin-right: 5%;
-   width: 2.5em;
- }
- 
- #email {
-   background: transparent;
-   border: 1px groove #ffffff;
-   height: 80%;
-   width: 186px;
   }
- 
- :-ms-input-placeholder {
-   color: white;
-   size: x-small;
- }
- 
- .news-img-box {
+  
+  /*footer part*/
+  #footer-section {
+    height: 670px;
+  }
+  
+  .footer-grid {
+   display: flex;
+   flex-direction: column;
    align-items: center;
-   align-content: center;
-   opacity: 62%;
-   background-color: transparent;
- }
- 
- .footer-input img {
-   size: auto; 
- }
- 
- #btn-send-email {
- 
-   width: 4em;
-   height:90%;
-   padding: 0 20%;
-   border: 2px solid rgb(141, 152, 162);
-   background-color: rgb(141, 152, 162);
-   color: rgb(141, 152, 162);
- 
- 
- }
- 
- .footer-grid-4 {
-   display: inline-flex;
-   grid-column: 1/ span 2;
-   margin-bottom: 0em;
- }
- 
- .footer-grid-4 div {
-   margin-right: 2%;
- }
- 
- .footer-input {
-   display: flex; 
-   flex-direction: row;
-   justify-content: flex-start;
- }
- 
- 
- 
- 
- 
- 
-  
-  /* -------- Lisa responsive ---------------*/
-  
-  @media only screen and (max-width: 800px) {
-    /*expertise part*/
-    #expertise {
-      height: 80%;
-      background-color: white;
-      margin: 25px 5px;
-      border: 30px 30px; 
-      margin-bottom: 60px;
-      align-content: center;
-      font-size: large;
-      overflow: hidden;
-    }
-  
-    .expertice-heading {
-      font-weight: bolder;
-    }
-
-
-    .grid {
-      display: grid;
-      height: 90%;
-      width: 100%;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 55% 55%;
-      margin: 1% 1%;
-      flex-shrink: 0;
-    }
-  
-    .grid-1 p,
-    .grid-2 p,
-    .grid-3 p,
-    .grid-4 p,
-    .grid-5 p,
-    .grid-6 p {
-      text-align-last: center;
-      font-size: 50%;
-    }
- 
- .expertise-p-none {
-   display: none;
- }
- 
- 
- /*team part*/
-
- #meetteam {
- height: 640px; 
- }
-
- .team-box-h1 {
-  text-align: center;
-  padding: 5%;
-  font-weight: 100;
-
- }
-
- .team-box-firstP {
-   display: none;
- }
- 
- .bottom-items-section {
-   display: none;
- }
- 
- .btn-weAre {
-   display: none;
- }
- 
-
- 
- .card{
-   background-size: cover;
-   border-bottom: 10%;
-   display: flex;
-   border: 2px solid rgb(127, 243, 179);
- }
- 
- .items {
-   display: flex;
-   flex-wrap: wrap;
-  
- }
- 
- /*footer part*/
- #footer-section {
-   height: 670px;
-   max-width: 100%;
- }
-
- .footer-grid {
-  display: flex;
-  flex-wrap: wrap;
- }
- 
- .footer-box-none {
-   display: none;
- }
- 
-.team-box {
-  margin-top: 0px;
-  overflow: hidden;
-}
-
   }
-  /* -------- Lisa responsive end---------------*/
-
+  
+  .footer-box-none {
+    display: none;
+  }
+  
+ .team-box {
+   margin-top: 0px;
+   overflow: hidden;
+ }
+ 
+   }
+   /* -------- Lisa responsive end---------------*/
+ 
