@@ -1,6 +1,6 @@
-* {
+/* * {
   margin: 0;
-}
+} */
 
 
 header {
@@ -118,14 +118,14 @@ a:hover {
 
 #ourstory {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 3em;
 }
 
 #storytext {
   width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -147,14 +147,17 @@ a:hover {
 
 #storylogo {
   width: calc(100% / 12 * 5);
+  /* height:30%; */
   display: flex;
   justify-content: center;
 }
 
-/* 
+
 #storylogo img {
-  padding-right: 2em;
-} */
+  display: block;
+  height: 75%;
+  width: auto;
+}
 
 @media only screen and (max-width: 800px) {
   #ourstory {
