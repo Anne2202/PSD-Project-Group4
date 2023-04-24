@@ -2,17 +2,49 @@
   margin: 0;
 } */
 
-header {
-  border: 2px solid rgba(255, 192, 203, 0);
-  background-image: url(./photoshop/photoshop/design-assets/bgk-header.png);
-  background-repeat: no-repeat;
-  height: 46em;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {
-  border: 2px solid rgba(0, 128, 0, 0);
+#myBtn:hover {
+  background-color: aqua;
+}
+
+header {
+  background-image: url(./photoshop/photoshop/design-assets/bgk-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 46em;
+  width: 100vw;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logoAndTajam {
@@ -21,7 +53,7 @@ nav {
   padding-left: 8em;
   width: 30%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -32,28 +64,75 @@ nav {
   font-weight: 100;
 }
 
-ul {
-  border: 2px solid rgba(255, 0, 0, 0);
-  width: 70%;
-  padding-left: 6em;
+.nav-menu {
+  width: 55%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 1.5em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.8em;
   text-transform: uppercase;
-  list-style-type: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.nav-link {
+  transition: 0.3s ease-out;
 }
 
-a:hover {
+.nav-link:hover {
   color: aqua;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 2em;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-image: url(./photoshop/photoshop/design-assets/bgk-header.png);
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 #hero-section {
@@ -62,15 +141,15 @@ a:hover {
   flex-direction: column;
   margin-top: 3em;
   padding-bottom: 9em;
-  align-content: center;
+  align-items: center;
 }
 
 #hero-section h1 {
-  border: 2px solid rgba(238, 130, 238, 0.603);
+  border: 2px solid rgba(238, 130, 238, 0);
   color: white;
   padding: 0.6em;
   display: flex;
-  justify-content: center;
+  align-items: center;
   font-size: 2em;
 }
 
@@ -82,7 +161,7 @@ a:hover {
 }
 
 #hero-section p {
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0);
   color: white;
   padding-left: 22em;
   padding-right: 22em;
@@ -124,7 +203,7 @@ a:hover {
   #hero-section {
     border: 2px solid rgba(255, 255, 255, 0);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     margin: 0;
   }
 }
@@ -133,11 +212,6 @@ a:hover {
   ul {
     padding-left: 1em;
     padding-right: 2em;
-  }
-  #hero-section {
-    border: 2px solid rgba(255, 255, 255, 0);
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -151,18 +225,17 @@ a:hover {
     justify-content: flex-end;
     gap: 1em;
   }
-  #hero-section {
-    border: 2px solid rgba(255, 255, 255, 0);
-    display: flex;
-    flex-direction: column;
+
+  li {
+    display: none;
   }
+
   #hero-section h1 {
-    border: 2px solid rgba(238, 130, 238, 0.603);
+    border: 2px solid rgba(238, 130, 238, 0);
     color: white;
     padding: 1em;
     display: flex;
     font-size: 1.5em;
-    justify-content: center;
   }
   #hero-section p {
     padding: 2em;
@@ -180,19 +253,15 @@ a:hover {
     border: 2px solid rgba(0, 0, 255, 0);
     padding: 1em;
   }
-  ul {
-    margin: 0;
-    font-size: 0.7em;
+
+  #hero-section h1 {
+    border: 2px solid rgba(238, 130, 238, 0);
+    color: white;
     padding: 1em;
-    justify-content: center;
-  }
-
-  #hero-section {
-    border: 2px solid rgba(255, 255, 255, 0);
     display: flex;
-    flex-direction: column;
+    font-size: 1.5em;
+    align-items: center;
   }
-
   #hero-section p {
     padding: 1em;
   }
@@ -820,7 +889,9 @@ h7 {
 
 
 
+
 /*footer part - media */
+
 #footer-section {
   height: 670px;
 }
