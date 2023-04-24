@@ -1,6 +1,6 @@
-* {
+/* * {
   margin: 0;
-}
+} */
 
 #myBtn {
   display: none;
@@ -272,15 +272,19 @@ a {
 
 #ourstory {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 3em;
 }
 
 #storytext {
   width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
+}
+
+#storytext h2{
+  margin-top: 0;
 }
 
 #storytext p {
@@ -301,8 +305,15 @@ a {
 
 #storylogo {
   width: calc(100% / 12 * 5);
+  /* height:30%; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+#storylogo img {
+  display: block;
+  height: 85%;
+  width: auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -526,58 +537,73 @@ h6 {
 }
 
 .contactItem {
-  /* border: solid rgba(54, 220, 57, 0.729); */
-  width: 30%;
+  border: solid rgba(54, 220, 57, 0.729);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 25%;
   padding: 3%;
+  
 }
 
 .contactItem h2 {
+  /* border: solid red; */
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 .inputItem {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
   margin: 0.5em 0;
   padding: 0.5em;
   width: 95%;
 }
 
 .clientContainer {
-  /* border: solid rgba(5, 8, 5, 3); */
+  border: solid rgba(5, 8, 5, 3);
   display: flex;
+  height: 100%;
   justify-content: space-between;
 }
 
 .clients {
-  /* border: solid rgba(207, 126, 26, 0.736); */
+  border: solid rgba(207, 126, 26, 0.736);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  width: 30%;
   align-content: center;
 }
 
 .clients img {
-  width: 85%;
-  margin: 5% 0;
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
   #contact {
+    border: red solid;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* height: max-content; */
   }
 
   .contactItem {
     /* border: solid rgba(54, 220, 57, 0.729); */
     width: 90%;
+    height:75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 3%;
+    /* height: 100%; */
+    
+
   }
 
   .contactItem h2 {
@@ -594,6 +620,8 @@ h6 {
     /* border: solid rgba(5, 8, 5, 0.7); */
     display: flex;
     justify-content: space-around;
+    
+    
   }
 
   .clients {
@@ -601,14 +629,20 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
-    height: auto;
+    align-items: center;
+    
   }
 
   .clients img {
     /* border: solid red; */
-    width: 100%;
+    display: block;
+    width: 70%;
   }
+
+  #learnMoreButton3{
+    margin-top: 1em;
+  }
+  
 }
 
 /*  Lisa footer section-neu   */
@@ -616,6 +650,7 @@ h6 {
 #footer-section {
   width: 100vw;
   height: 380px;
+
 }
 
 footer {
@@ -775,7 +810,7 @@ h7 {
 /* -------- Lisa responsive -neu  ---------------*/
 
 @media only screen and (max-width: 800px) {
-  /*expertise part*/
+  /*expertise part - media*/
   #expertise {
     height: 80%;
     background-color: white;
@@ -815,7 +850,7 @@ h7 {
     display: none;
   }
 
-  /*team part*/
+  /*team part - media*/
 
   #meetteam {
     display: flex;
@@ -851,25 +886,12 @@ h7 {
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-/*  Lisa footer section   */
 
-#footer-section {
-  width: 100vw;
-  height: 380px;
-  border-bottom-right-radius: 12%;
-  border-bottom-left-radius: 12%;
-}
 
-footer {
-  background: url(photoshop/photoshop/design-assets/bgk-footer.png) center/cover
-    no-repeat;
-  height: 300px;
-  width: 100%;
-}
 
-/*footer part*/
+/*footer part - media */
+
 #footer-section {
   height: 670px;
 }
@@ -889,8 +911,11 @@ footer {
   overflow: hidden;
 }
 
-/* -------- Lisa responsive end - neu---------------*/
-
 .footer-box-none {
   display: none;
 }
+
+}
+
+
+/* -------- Lisa responsive end - neu---------------*/
