@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -247,7 +251,7 @@ a {
     border: 2px solid rgba(0, 128, 0, 0);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
   .logoAndTajam {
     border: 2px solid rgba(0, 0, 255, 0);
@@ -260,7 +264,7 @@ a {
     padding: 1em;
     display: flex;
     font-size: 1.5em;
-    align-items: center;
+    text-align: center;
   }
   #hero-section p {
     padding: 1em;
