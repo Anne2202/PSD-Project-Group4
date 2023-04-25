@@ -372,11 +372,16 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 1em;
   }
 
   #learnMoreButton2 {
     align-self: center;
   }
+  #storylogo {
+    justify-content: center;
+  }
+
 }
 
 /* ============================================================================================================================== */
